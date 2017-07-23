@@ -33,10 +33,15 @@ public class productTest {
 
     @Test
     public void canSetCost(){
-        double expected = 6.50;
-        product1.setCost(expected);
-        double result = product1.getCost();
-        assertEquals(expected, result);
+        double expected1 = 6.50;
+        product1.setCost(expected1);
+        double result1 = product1.getCost();
+        assertEquals(expected1, result1);
+
+        double expected2 = 0;
+        product1.setCost(expected2);
+        double result2 = product1.getCost();
+        assertEquals(expected2, result2);
     }
 
     @Test(expected = IllegalArgumentException.class)
