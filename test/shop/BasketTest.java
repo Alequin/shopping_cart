@@ -175,4 +175,18 @@ public class BasketTest {
         assertEquals(30.0, basket1.getTotalCost(), 0.01);
     }
 
+    @Test
+    public void getTotalCost_WithPoorNumbers(){
+
+        assertEquals(0.0, basket1.getTotalCost());
+
+        shopStock.add(new Pizza(0.1));
+        shopStock.add(new ToothPaste(0.2));
+
+        basket1.add(3);
+        basket1.add(3);
+
+        assertEquals(0.3, basket1.getTotalCost(), 0.01);
+    }
+
 }

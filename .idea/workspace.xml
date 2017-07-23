@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shop/Basket.java" afterPath="$PROJECT_DIR$/src/shop/Basket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/shop/BasketTest.java" afterPath="$PROJECT_DIR$/test/shop/BasketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shop/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+            <state relative-caret-position="520">
+              <caret line="186" column="23" lean-forward="true" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +81,10 @@
         <option value="$PROJECT_DIR$/src/shop/Stock.java" />
         <option value="$PROJECT_DIR$/src/shop/Shop.java" />
         <option value="$PROJECT_DIR$/test/shop_test/BasketTest.java" />
-        <option value="$PROJECT_DIR$/test/shop/BasketTest.java" />
         <option value="$PROJECT_DIR$/test/products/productTest.java" />
         <option value="$PROJECT_DIR$/src/Products/Product.java" />
         <option value="$PROJECT_DIR$/src/shop/Basket.java" />
+        <option value="$PROJECT_DIR$/test/shop/BasketTest.java" />
       </list>
     </option>
   </component>
@@ -414,12 +414,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shop - 2017.07.23 at 20h 55m 26s.xml">
-      <configuration name="All in shop" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_shop - 2017.07.23 at 21h 01m 17s.xml">
-      <configuration name="All in shop" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shop - 2017.07.23 at 21h 05m 21s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
@@ -442,6 +436,12 @@
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_shop - 2017.07.23 at 21h 22m 34s.xml">
+      <configuration name="All in shop" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shop - 2017.07.23 at 21h 24m 07s.xml">
+      <configuration name="All in shop" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shop - 2017.07.23 at 21h 25m 29s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -468,7 +468,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39925373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -518,7 +518,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -643,16 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shop/Basket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -663,6 +653,16 @@
             <element signature="method#remove#0;class#Basket#0" expanded="false" />
             <element signature="method#remove#1;class#Basket#0" expanded="false" />
             <element signature="method#empty#0;class#Basket#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="186" column="23" lean-forward="true" selection-start-line="186" selection-start-column="23" selection-end-line="186" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
