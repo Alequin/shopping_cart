@@ -163,4 +163,16 @@ public class BasketTest {
         assertEquals(preRemoveStockCount+3, shopStock.countItems());
     }
 
+    @Test
+    public void getTotalCost(){
+
+        assertEquals(0.0, basket1.getTotalCost());
+
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+
+        assertEquals(30.0, basket1.getTotalCost(), 0.01);
+    }
+
 }
