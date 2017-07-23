@@ -53,6 +53,18 @@ public class BasketTest {
     }
 
     @Test
+    public void canAddToBasket__OtherIndex(){
+        int preAddLength = basket1.countItems();
+
+        basket1.add(2);
+        basket1.add(1);
+        basket1.add(0);
+
+        assertEquals(preAddLength+3, basket1.countItems());
+        assertEquals(0, shopStock.countItems());
+    }
+
+    @Test
     public void canRemoveFromBasket(){
         basket1.add(0);
         basket1.add(0);
@@ -63,6 +75,23 @@ public class BasketTest {
 
         basket1.remove(0);
         basket1.remove(0);
+        basket1.remove(0);
+
+        assertEquals(preRemoveBasketCount-3, basket1.countItems());
+        assertEquals(preRemoveStockCount+3, shopStock.countItems());
+    }
+
+    @Test
+    public void canRemoveFromBasket__OtherIndex(){
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+
+        int preRemoveBasketCount = basket1.countItems();
+        int preRemoveStockCount = shopStock.countItems();
+
+        basket1.remove(2);
+        basket1.remove(1);
         basket1.remove(0);
 
         assertEquals(preRemoveBasketCount-3, basket1.countItems());
