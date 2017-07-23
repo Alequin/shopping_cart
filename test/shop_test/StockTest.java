@@ -9,6 +9,7 @@ import org.junit.Test;
 import shop.Stock;
 
 import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
 public class StockTest {
 
@@ -67,5 +68,8 @@ public class StockTest {
         for(int j=0; j<3; j++){
             stock1.add(products[j]);
         }
+        Product[] stockProducts = stock1.empty();
+        assertEquals(0, stock1.countItems());
+        assertArrayEquals(products, stockProducts);
     }
 }
