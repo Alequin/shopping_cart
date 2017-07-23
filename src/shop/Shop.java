@@ -24,4 +24,11 @@ public class Shop {
         return money.doubleValue();
     }
 
+    public void increaseMoney(double toAdd) {
+        money = money.add(BigDecimal.valueOf(toAdd));
+    }
+
+    public void decreaseMoney(double toSubtract) {
+        money = money.subtract(BigDecimal.valueOf(toSubtract));
+    }
 }
