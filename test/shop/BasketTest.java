@@ -24,9 +24,9 @@ public class BasketTest {
         basket1 = shop1.makeBasket();
 
         products = new Product[3];
-        products[0] = new Pizza(5);
-        products[1] = new Crisps(10);
-        products[2] = new ToothPaste(15);
+        products[0] = new Pizza();
+        products[1] = new Crisps();
+        products[2] = new ToothPaste();
 
         for(Product product : products){
             shopStock.add(product);
@@ -81,7 +81,7 @@ public class BasketTest {
 
     @Test
     public void canCountItemsByType(){
-        shopStock.add(new Pizza(2.5));
+        shopStock.add(new Pizza());
         basket1.add(1);
         basket1.add(2);
         basket1.add(1);
@@ -128,7 +128,7 @@ public class BasketTest {
 
     @Test
     public void canRemoveFromBasketByType(){
-        shopStock.add(new Pizza(2.5));
+        shopStock.add(new Pizza());
         basket1.add(0);
         basket1.add(0);
         basket1.add(0);
@@ -172,7 +172,7 @@ public class BasketTest {
         basket1.add(0);
         basket1.add(0);
 
-        assertEquals(30.0, basket1.getTotalCost(), 0.01);
+        assertEquals(10.80, basket1.getTotalCost(), 0.01);
     }
 
     @Test
@@ -180,13 +180,12 @@ public class BasketTest {
 
         assertEquals(0.0, basket1.getTotalCost());
 
-        shopStock.add(new Pizza(0.1));
-        shopStock.add(new ToothPaste(0.2));
+        shopStock.add(new Crisps());
+        shopStock.add(new ToothPaste());
 
         basket1.add(3);
         basket1.add(3);
 
-        assertEquals(0.3, basket1.getTotalCost(), 0.01);
+        assertEquals(4.3, basket1.getTotalCost(), 0.01);
     }
-
 }

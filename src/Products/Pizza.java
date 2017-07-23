@@ -6,7 +6,7 @@ public class Pizza extends Product{
         super(name, cost);
     }
     
-    public Pizza(double cost){
-        this("Pizza", cost);
+    public Pizza(){
+        this("Pizza", 6.50);
     }
 }

@@ -6,8 +6,8 @@ public class ToothPaste extends Product{
         super(name, cost);
     }
 
-    public ToothPaste(double cost){
-        this("ToothPaste", cost);
+    public ToothPaste(){
+        this("ToothPaste", 3.10);
     }
 
 }

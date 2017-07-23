@@ -19,9 +19,9 @@ public class StockTest {
     public void setup(){
         stock1 = new Stock("Shop name");
 
-        Product p1 = new Pizza(10);
-        Product p2 = new Crisps(10);
-        Product p3 = new ToothPaste(10);
+        Product p1 = new Pizza();
+        Product p2 = new Crisps();
+        Product p3 = new ToothPaste();
         Product[] tempProducts = {p1, p2, p3};
         products = tempProducts;
     }
@@ -35,7 +35,7 @@ public class StockTest {
 
     @Test
     public void canAddAndRemoveProduct(){
-        Pizza pizza = new Pizza(6.50);
+        Pizza pizza = new Pizza();
         int preLength = stock1.countItems();
         stock1.add(pizza);
         assertEquals(preLength+1, stock1.countItems());
@@ -61,7 +61,7 @@ public class StockTest {
         for(int j=0; j<3; j++){
             stock1.add(products[j]);
         }
-        Pizza pizza1 = new Pizza(5);
+        Pizza pizza1 = new Pizza();
         stock1.add(pizza1);
 
         int expected1 = 1;

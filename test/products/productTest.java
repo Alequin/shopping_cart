@@ -16,7 +16,7 @@ public class productTest {
 
     @Before
     public void setup(){
-        product1 = new Pizza(4.23);
+        product1 = new Pizza();
     }
 
     @Test
@@ -28,14 +28,14 @@ public class productTest {
 
     @Test
     public void canGetCost(){
-        double expected = 4.23;
+        double expected = 6.50;
         double result = product1.getCost();
         assertEquals(expected, result);
     }
 
     @Test
     public void canGetCostAsBigDecimal(){
-        double expected = 4.23;
+        double expected = 6.50;
         BigDecimal result = product1.getCostAsBigDecimal();
         assertEquals(expected, result.doubleValue());
     }
@@ -64,7 +64,7 @@ public class productTest {
         Class result1 = product1.getClass();
         assertEquals(expected1, result1);
 
-        Product product2 = new Crisps(2.25);
+        Product product2 = new Crisps();
 
         Class expected2 = Crisps.class;
         Class result2 = product2.getClass();
