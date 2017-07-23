@@ -51,6 +51,27 @@ public class StockTest {
     }
 
     @Test
+    public void canCountProductsOfSpecificType(){
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
+        Pizza pizza1 = new Pizza(5);
+        stock1.add(pizza1);
+
+        int expected1 = 1;
+        int result1 = stock1.countItems(Crisps.class);
+        assertEquals(expected1, result1);
+
+        int expected2 = 1;
+        int result2 = stock1.countItems(ToothPaste.class);
+        assertEquals(expected2, result2);
+
+        int expected3 = 2;
+        int result3 = stock1.countItems(Pizza.class);
+        assertEquals(expected3, result3);
+    }
+
+    @Test
     public void cannotAddExistingProductsToStock(){
         for(int j=0; j<3; j++){
             stock1.add(products[j]);
