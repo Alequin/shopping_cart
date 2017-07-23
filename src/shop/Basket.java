@@ -67,4 +67,28 @@ public class Basket {
         }
         return cost.doubleValue();
     }
+
+    public double getTotalCostWithDiscount() {
+        ArrayList<Class> seenList = new ArrayList<>();
+
+        BigDecimal cost = BigDecimal.ZERO;
+        for (Product product : products) {
+
+            Class current = product.getClass();
+            boolean seen = false;
+            if(shopStock.isTwoForOne(current)){
+                seen = seenList.contains(current);
+                if(!seen){
+                    seenList.add(current);
+                }else{
+                    seenList.remove(current);
+                }
+            }
+
+            if(!seen){
+                cost = cost.add(product.getCostAsBigDecimal());
+            }
+        }
+        return cost.doubleValue();
+    }
 }
