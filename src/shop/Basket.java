@@ -28,6 +28,15 @@ public class Basket {
         shopStock.add(toMoveToStock);
     }
 
+    protected void remove(Class type){
+        int length = products.size();
+        for(int j=length-1; j>=0; j--){
+            if(products.get(j).getClass() == type){
+                remove(j);
+            }
+        }
+    }
+
     protected void empty(){
         for(Product product : products){
             shopStock.add(product);

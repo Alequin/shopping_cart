@@ -110,7 +110,7 @@ public class BasketTest {
         int preRemoveStockCount = shopStock.countItems();
 
         basket1.remove(Pizza.class);
-        
+
         assertEquals(preRemoveBasketCount-2, basket1.countItems());
         assertEquals(preRemoveStockCount+2, shopStock.countItems());
     }
