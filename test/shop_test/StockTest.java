@@ -18,13 +18,20 @@ public class StockTest {
 
     @Before
     public void setup(){
-        stock1 = new Stock();
+        stock1 = new Stock("Shop name");
 
         Product p1 = new Pizza(10);
         Product p2 = new Crisps(10);
         Product p3 = new ToothPaste(10);
         Product[] tempProducts = {p1, p2, p3};
         products = tempProducts;
+    }
+
+    @Test
+    public void canGetShopName(){
+        String expected = "Shop name";
+        String result = stock1.getShopName();
+        assertEquals(expected, result);
     }
 
     @Test

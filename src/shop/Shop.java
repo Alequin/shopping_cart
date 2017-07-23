@@ -15,7 +15,7 @@ public class Shop {
 
         this.name = name;
         this.money = BigDecimal.valueOf(money);
-        this.stock = new Stock();
+        this.stock = new Stock(name);
     }
 
     public String getName(){

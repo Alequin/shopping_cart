@@ -10,11 +10,17 @@ public class Stock {
     private ArrayList<Product> products;
     private HashMap<Class, Integer> itemCountTracker;
     private HashMap<Class, Boolean> twoForOneTracker;
+    private String shopName;
 
-    public Stock(){
+    public Stock(String shopName){
         products = new ArrayList<>();
         itemCountTracker = new HashMap<>();
         twoForOneTracker = new HashMap<>();
+        this.shopName = shopName;
+    }
+
+    public String getShopName(){
+        return shopName;
     }
 
     public void add(Product product) {
