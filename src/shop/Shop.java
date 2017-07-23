@@ -30,6 +30,10 @@ public class Shop {
         return stock;
     }
 
+    public Basket makeBasket(){
+        return new Basket(stock);
+    }
+
     public void increaseMoney(double toAdd) {
         money = money.add(BigDecimal.valueOf(toAdd));
     }
