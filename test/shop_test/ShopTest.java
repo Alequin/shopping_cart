@@ -6,7 +6,7 @@ import shop.Shop;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class productTest {
+public class ShopTest {
 
     private Shop shop1;
 
