@@ -48,4 +48,15 @@ public class Basket {
         return products.size();
     }
 
+    protected int countItems(Class type){
+        int sum = 0;
+        int length = products.size();
+        for (Product product : products) {
+            if (product.getClass() == type) {
+                sum++;
+            }
+        }
+        return sum;
+    }
+
 }
