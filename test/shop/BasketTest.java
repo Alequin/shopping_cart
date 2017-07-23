@@ -188,4 +188,19 @@ public class BasketTest {
 
         assertEquals(4.3, basket1.getTotalCost(), 0.01);
     }
+
+    @Test
+    public void getTotalCostWithDiscount(){
+
+        shopStock.add(new Pizza());
+        shopStock.makeTwoForOne(Pizza.class);
+
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+
+        assertEquals(10.80, basket1.getTotalCostWithDiscount());
+
+    }
 }
