@@ -19,6 +19,11 @@ public class Basket {
         products.add(toAdd);
     }
 
+    protected void remove(int basketIndex){
+        Product toMoveToStock = products.remove(basketIndex);
+        shopStock.add(toMoveToStock);
+    }
+
     protected int countItems(){
         return products.size();
     }
