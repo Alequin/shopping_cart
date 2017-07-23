@@ -47,6 +47,11 @@ public class Stock {
     }
 
     public Product[] empty(Class type) {
+        itemCounter.remove(type);
+        return removeProductsOfType(type);
+    }
+
+    private Product[] removeProductsOfType(Class type){
         int resultIndex = 0;
         Product[] result = new Product[countItems(type)];
         int length = products.size();
@@ -57,8 +62,6 @@ public class Stock {
                 result[resultIndex++] = products.remove(j);
             }
         }
-
-        itemCounter.remove(type);
         return result;
     }
 
