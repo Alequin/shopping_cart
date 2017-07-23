@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="" />
+    <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shop/Customer.java" afterPath="$PROJECT_DIR$/src/shop/Customer.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,46 +15,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/shop/Basket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="77" column="33" lean-forward="true" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
-              <folding>
-                <element signature="method#Basket#0;class#Basket#0" expanded="false" />
-                <element signature="method#add#0;class#Basket#0" expanded="false" />
-                <element signature="method#remove#0;class#Basket#0" expanded="false" />
-                <element signature="method#remove#1;class#Basket#0" expanded="false" />
-                <element signature="method#empty#0;class#Basket#0" expanded="false" />
-                <element signature="method#countItems#1;class#Basket#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="242" column="62" lean-forward="false" selection-start-line="242" selection-start-column="62" selection-end-line="242" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shop/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/shop/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -60,32 +34,6 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#212#213#0" expanded="true" />
                 <element signature="e#265#266#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/products/productTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StockTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/shop/StockTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1861">
-              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,8 +83,8 @@
         <option value="$PROJECT_DIR$/test/products/productTest.java" />
         <option value="$PROJECT_DIR$/src/shop/Basket.java" />
         <option value="$PROJECT_DIR$/test/shop/BasketTest.java" />
-        <option value="$PROJECT_DIR$/src/shop/Customer.java" />
         <option value="$PROJECT_DIR$/test/shop/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/shop/Customer.java" />
       </list>
     </option>
   </component>
@@ -689,6 +637,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="242" column="62" lean-forward="false" selection-start-line="242" selection-start-column="62" selection-end-line="242" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/products/productTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -701,24 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="242" column="62" lean-forward="false" selection-start-line="242" selection-start-column="62" selection-end-line="242" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/shop/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/shop/CustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -728,6 +668,14 @@
             <element signature="e#212#213#0" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shop/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
