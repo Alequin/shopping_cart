@@ -140,4 +140,15 @@ public class StockTest {
         boolean result2 = stock1.isInStock(Pizza.class);
         assertEquals(true, result2);
     }
+
+    @Test
+    public void canCheckIfProductTypeIsTwoForOne(){
+        boolean result1 = stock1.isTwoForOne(Pizza.class);
+        assertEquals(false, result1);
+
+        stock1.makeTwoForOne(Pizza.class);
+
+        boolean result2 = stock1.isTwoForOne(Pizza.class);
+        assertEquals(true, result2);
+    }
 }
