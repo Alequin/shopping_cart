@@ -24,6 +24,13 @@ public class Basket {
         shopStock.add(toMoveToStock);
     }
 
+    protected void empty(){
+        for(Product product : products){
+            shopStock.add(product);
+        }
+        products.clear();
+    }
+
     protected int countItems(){
         return products.size();
     }
