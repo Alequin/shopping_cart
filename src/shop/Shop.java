@@ -57,4 +57,8 @@ public class Shop {
     protected void addCustomer(Customer customer){
         customers.add(customer);
     }
+
+    protected void removeCustomer(Customer customer){
+        customers.remove(customer);
+    }
 }
