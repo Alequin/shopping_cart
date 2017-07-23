@@ -47,8 +47,9 @@ public class Stock {
     }
 
     public Product[] empty(Class type) {
+        Product[] result = removeProductsOfType(type);
         itemCounter.remove(type);
-        return removeProductsOfType(type);
+        return result;
     }
 
     private Product[] removeProductsOfType(Class type){
