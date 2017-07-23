@@ -57,8 +57,8 @@ public class productTest {
 
         Product product2 = new Crisps(2.25);
 
-        Class expected2 = Pizza.class;
-        Class result2 = product1.getClass();
+        Class expected2 = Crisps.class;
+        Class result2 = product2.getClass();
         assertEquals(expected2, result2);
     }
 
