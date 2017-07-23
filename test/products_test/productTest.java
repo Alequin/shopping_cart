@@ -25,18 +25,23 @@ public class productTest {
     }
 
     @Test
-    public void canGetPrice(){
+    public void canGetCost(){
         double expected = 4.23;
         double result = product1.getCost();
         assertEquals(expected, result);
     }
 
     @Test
-    public void canSetPrice(){
+    public void canSetCost(){
         double expected = 6.50;
         product1.setCost(expected);
         double result = product1.getCost();
         assertEquals(expected, result);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void cannotSetCostUnderZero(){
+        product1.setCost(-0.01);
     }
 
     @Test
@@ -46,7 +51,7 @@ public class productTest {
         assertEquals(expected1, result1);
 
         Product product2 = new Crisps(2.25);
-        
+
         Class expected2 = Pizza.class;
         Class result2 = product1.getClass();
         assertEquals(expected2, result2);
