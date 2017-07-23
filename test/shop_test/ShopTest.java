@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 import shop.Shop;
 
+import java.math.BigDecimal;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class ShopTest {
@@ -37,6 +39,30 @@ public class ShopTest {
         Shop shop = new Shop("x shop", 0);
         double result1 = shop.getMoney();
         assertEquals(expected1, result1);
+    }
+
+    @Test
+    public void canIncreaseMoney(){
+        BigDecimal initialMoney = BigDecimal.valueOf(shop1.getMoney());
+        double toAdd = 250.50;
+        BigDecimal expected1 = initialMoney.add(BigDecimal.valueOf(250.50));
+
+        shop1.increaseMoney(toAdd);
+        double result1 = shop1.getMoney();
+
+        assertEquals(expected1.doubleValue(), result1);
+    }
+
+    @Test
+    public void canDecreaseMoney(){
+        BigDecimal initialMoney = BigDecimal.valueOf(shop1.getMoney());
+        double toSubtract = 250.50;
+        BigDecimal expected1 = initialMoney.subtract(BigDecimal.valueOf(250.50));
+
+        shop1.decreaseMoney(toSubtract);
+        double result1 = shop1.getMoney();
+
+        assertEquals(expected1.doubleValue(), result1);
     }
 
     @Test(expected = IllegalArgumentException.class)
