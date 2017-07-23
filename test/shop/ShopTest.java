@@ -72,12 +72,12 @@ public class ShopTest {
     @Test
     public void canAddCustomer(){
 
-        assertEquals(0, shop1.getCustomerCount());
+        assertEquals(0, shop1.countCustomers());
 
         Customer c1 = new Customer(200, false);
         shop1.addCustomer(c1);
 
-        assertEquals(1, shop1.getCustomerCount());
+        assertEquals(1, shop1.countCustomers());
         assertEquals(c1, shop1.getCustomers()[0]);
     }
 }
