@@ -6,6 +6,7 @@ public class Shop {
 
     private String name;
     private BigDecimal money;
+    private Stock stock;
 
     public Shop(String name, double money){
         if(money < 0){
@@ -14,6 +15,7 @@ public class Shop {
 
         this.name = name;
         this.money = BigDecimal.valueOf(money);
+        this.stock = new Stock();
     }
 
     public String getName(){
@@ -22,6 +24,10 @@ public class Shop {
 
     public double getMoney(){
         return money.doubleValue();
+    }
+
+    public Stock getStock(){
+        return stock;
     }
 
     public void increaseMoney(double toAdd) {
