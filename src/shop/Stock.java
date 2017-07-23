@@ -60,6 +60,10 @@ public class Stock {
         Integer productCount = itemCounter.get(productClass);
         productCount = productCount == null ? 1 : productCount + amount;
 
-        itemCounter.put(productClass, productCount);
+        if(productCount == 0){
+            itemCounter.remove(productClass);
+        }else{
+            itemCounter.put(productClass, productCount);
+        }
     }
 }
