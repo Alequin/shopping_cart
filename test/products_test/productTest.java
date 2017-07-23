@@ -61,5 +61,4 @@ public class productTest {
         Class result2 = product2.getClass();
         assertEquals(expected2, result2);
     }
-
 }
