@@ -99,6 +99,23 @@ public class BasketTest {
     }
 
     @Test
+    public void canRemoveFromBasketByType(){
+        shopStock.add(new Pizza(2.5));
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+
+        int preRemoveBasketCount = basket1.countItems();
+        int preRemoveStockCount = shopStock.countItems();
+
+        basket1.remove(Pizza.class);
+        
+        assertEquals(preRemoveBasketCount-2, basket1.countItems());
+        assertEquals(preRemoveStockCount+2, shopStock.countItems());
+    }
+
+    @Test
     public void canEmptyBasket(){
         basket1.add(0);
         basket1.add(0);
