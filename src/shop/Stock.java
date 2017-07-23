@@ -8,12 +8,12 @@ import java.util.HashMap;
 public class Stock {
 
     private ArrayList<Product> products;
-    private HashMap<Class, Integer> itemCounter;
+    private HashMap<Class, Integer> itemCountTracker;
     private HashMap<Class, Boolean> twoForOneTracker;
 
     public Stock(){
         products = new ArrayList<>();
-        itemCounter = new HashMap<>();
+        itemCountTracker = new HashMap<>();
         twoForOneTracker = new HashMap<>();
     }
 
@@ -31,7 +31,7 @@ public class Stock {
     }
 
     public int countItems(Class type) {
-        Integer count = itemCounter.get(type);
+        Integer count = itemCountTracker.get(type);
         return count == null ? 0 : count;
     }
 
@@ -49,7 +49,6 @@ public class Stock {
     }
 
     public boolean isTwoForOne(Class type){
-        boolean twoForOne;
         if(twoForOneTracker.get(type) == null){
             return false;
         }else{
@@ -70,13 +69,14 @@ public class Stock {
     public Product[] empty() {
         Product[] tempProducts = products.toArray(new Product[products.size()]);
         products.clear();
-        itemCounter.clear();
+        itemCountTracker.clear();
+        twoForOneTracker.clear();
         return tempProducts;
     }
 
     public Product[] empty(Class type) {
         Product[] result = removeProductsOfType(type);
-        itemCounter.remove(type);
+        removeTypesFromTrackers(type);
         return result;
     }
 
@@ -105,13 +105,18 @@ public class Stock {
     private void alterItemCount(Product product, int amount){
         Class productClass = product.getClass();
 
-        Integer productCount = itemCounter.get(productClass);
+        Integer productCount = itemCountTracker.get(productClass);
         productCount = productCount == null ? 1 : productCount + amount;
 
         if(productCount == 0){
-            itemCounter.remove(productClass);
+            removeProductsOfType(productClass);
         }else{
-            itemCounter.put(productClass, productCount);
+            itemCountTracker.put(productClass, productCount);
         }
+    }
+
+    private void removeTypesFromTrackers(Class type){
+        itemCountTracker.remove(type);
+        twoForOneTracker.remove(type);
     }
 }
