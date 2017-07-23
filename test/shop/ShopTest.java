@@ -80,4 +80,13 @@ public class ShopTest {
         assertEquals(1, shop1.countCustomers());
         assertEquals(c1, shop1.getCustomers()[0]);
     }
+    @Test
+    public void canRemoveCustomer(){
+
+        Customer c1 = new Customer(200, false);
+        shop1.addCustomer(c1);
+
+        shop1.removeCustomer(c1);
+        assertEquals(0, shop1.countCustomers());
+    }
 }
