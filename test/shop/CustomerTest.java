@@ -9,7 +9,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class CustomerTest {
 
-    private Shop shop1
+    private Shop shop1;
     private Customer customer1;
 
     @Before

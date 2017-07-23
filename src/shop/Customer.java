@@ -35,4 +35,11 @@ public class Customer {
         return money.add(BigDecimal.valueOf(amount));
     }
 
+    public void enterShop(Shop shop){
+        this.shop = shop;
+        this.basket = shop.makeBasket();
+
+        shop.addCustomer(this);
+    }
+
 }
