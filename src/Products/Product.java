@@ -2,7 +2,7 @@ package Products;
 
 import java.math.BigDecimal;
 
-public abstract class Product {
+public abstract class Product{
 
     private String name;
     private BigDecimal cost;
