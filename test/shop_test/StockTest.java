@@ -2,6 +2,7 @@ package shop_test;
 
 import org.junit.Before;
 import org.junit.Test;
+import shop.Stock;
 
 import static junit.framework.TestCase.assertEquals;
 
