@@ -14,6 +14,9 @@ public class Stock {
     }
 
     public void add(Product product) {
+        if(products.contains(product)){
+            return;
+        }
         products.add(product);
     }
 
