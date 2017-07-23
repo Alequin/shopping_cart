@@ -1,5 +1,6 @@
 package products_test;
 
+import Products.Crisps;
 import Products.Pizza;
 import Products.Product;
 import org.junit.Before;
@@ -40,9 +41,15 @@ public class productTest {
 
     @Test
     public void canGetSubClass(){
-        Class expected = Pizza.class;
-        Class result = product1.getClass();
-        assertEquals(expected, result);
+        Class expected1 = Pizza.class;
+        Class result1 = product1.getClass();
+        assertEquals(expected1, result1);
+
+        Product product2 = new Crisps(2.25);
+        
+        Class expected2 = Pizza.class;
+        Class result2 = product1.getClass();
+        assertEquals(expected2, result2);
     }
 
 }
