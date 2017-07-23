@@ -1,8 +1,19 @@
 package shop_test;
 
 import org.junit.Before;
-import org.junit.Test;
+import shop.Basket;
+import shop.Shop;
 
-import static junit.framework.TestCase.assertEquals;
 
-public class BasketTest {}
+public class BasketTest {
+
+    private Shop shop1;
+    private Basket basket1;
+
+    @Before
+    public void setup(){
+        shop1 = new Shop("The Shop", 500);
+        basket1 = shop1.makeBasket();
+    }
+
+}
