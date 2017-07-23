@@ -169,4 +169,26 @@ public class StockTest {
             assertEquals(true, stock1.isTwoForOne(prodClass));
         }
     }
+
+    @Test
+    public void canRemoveItemFromTwoForOneDeal(){
+
+        for(int j=0; j<3; j++){
+            stock1.makeTwoForOne(products[j].getClass());
+        }
+
+        for(int j=0; j<3; j++){
+            Class prodClass = products[j].getClass();
+            assertEquals(true, stock1.isTwoForOne(prodClass));
+        }
+
+        for(int j=0; j<3; j++){
+            stock1.removeFromTwoForOne(products[j].getClass());
+        }
+        
+        for(int j=0; j<3; j++){
+            Class prodClass = products[j].getClass();
+            assertEquals(false, stock1.isTwoForOne(prodClass));
+        }
+    }
 }
