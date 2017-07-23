@@ -8,6 +8,10 @@ public class Shop {
     private BigDecimal money;
 
     public Shop(String name, double money){
+        if(money < 0){
+            throw new IllegalArgumentException("Money cannot be less than 0. Current money: " + money);
+        }
+
         this.name = name;
         this.money = BigDecimal.valueOf(money);
     }
