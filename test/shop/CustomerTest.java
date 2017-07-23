@@ -26,7 +26,7 @@ public class CustomerTest {
         stock.add(new Pizza());
         stock.add(new ToothPaste());
 
-        customer1 = new Customer(200.00, true);
+        customer1 = new Customer(200.00, false);
     }
 
     @Test
@@ -107,15 +107,17 @@ public class CustomerTest {
         customer1.addToBasket(0);
         customer1.addToBasket(0);
 
-        BigDecimal expected = BigDecimal.valueOf(8.90);
+        shop1.getStock().makeTwoForOne(Crisps.class);
 
-        assertEquals(expected.doubleValue(), customer1.getCostOgfItemsWithDiscount());
+        BigDecimal expected = BigDecimal.valueOf(7.70);
+
+        assertEquals(expected.doubleValue(), customer1.getCostOfItemsWithDiscount());
 
         customer1.setHasLoyaltyCard(true);
         expected = expected.multiply(BigDecimal.valueOf(0.02));
         assertEquals(expected.doubleValue(), customer1.getCostOfItemsWithDiscount());
     }
-
+    
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__CountItems(){
         customer1.countBasketItems();
@@ -134,6 +136,6 @@ public class CustomerTest {
     }
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__GetCostOfItemsWithDiscount(){
-        customer1.getCostOfItems();
+        customer1.getCostOfItemsWithDiscount();
     }
 }

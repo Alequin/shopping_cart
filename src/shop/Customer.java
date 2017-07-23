@@ -75,4 +75,18 @@ public class Customer {
         }
         return basket.getTotalCost();
     }
+
+    public double getCostOfItemsWithDiscount() {
+        if(basket == null){
+            throw new IllegalStateException(NOT_IN_SHOP_MESSAGE);
+        }
+
+        BigDecimal cost = BigDecimal.valueOf(basket.getTotalCostWithDiscount());
+
+        if(hasLoyaltyCard){
+            return cost.multiply(BigDecimal.valueOf(0.02)).doubleValue();
+        }else{
+            return cost.doubleValue();
+        }
+    }
 }
