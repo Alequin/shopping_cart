@@ -1,8 +1,7 @@
-package shop_test;
+package shop;
 
 import org.junit.Before;
 import org.junit.Test;
-import shop.Shop;
 
 import java.math.BigDecimal;
 

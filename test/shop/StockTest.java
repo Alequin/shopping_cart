@@ -1,4 +1,4 @@
-package shop_test;
+package shop;
 
 import Products.Crisps;
 import Products.Pizza;
@@ -6,7 +6,6 @@ import Products.Product;
 import Products.ToothPaste;
 import org.junit.Before;
 import org.junit.Test;
-import shop.Stock;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertArrayEquals;

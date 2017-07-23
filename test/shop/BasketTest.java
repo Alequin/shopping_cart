@@ -1,4 +1,4 @@
-package shop_test;
+package shop;
 
 import Products.Crisps;
 import Products.Pizza;
@@ -6,9 +6,6 @@ import Products.Product;
 import Products.ToothPaste;
 import org.junit.Before;
 import org.junit.Test;
-import shop.Basket;
-import shop.Shop;
-import shop.Stock;
 
 import static junit.framework.TestCase.assertEquals;
 
@@ -45,6 +42,7 @@ public class BasketTest {
         basket1.add(0);
 
         assertEquals(preAddLength+3, basket1.countItems());
+        assertEquals(0, shopStock.countItems());
     }
 
 }

@@ -1,4 +1,4 @@
-package products_test;
+package products;
 
 import Products.Crisps;
 import Products.Pizza;
