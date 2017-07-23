@@ -114,4 +114,30 @@ public class StockTest {
         Product[] expectedArray = {products[0]};
         assertArrayEquals(expectedArray, tempProducts);
     }
+
+    @Test
+    public void canCheckIfObjectIsInStock(){
+        boolean result1 = stock1.isInStock(products[0]);
+        assertEquals(false, result1);
+
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
+
+        boolean result2 = stock1.isInStock(products[0]);
+        assertEquals(true, result2);
+    }
+
+    @Test
+    public void canCheckIfTypeIsInStock(){
+        boolean result1 = stock1.isInStock(Pizza.class);
+        assertEquals(false, result1);
+
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
+
+        boolean result2 = stock1.isInStock(Pizza.class);
+        assertEquals(true, result2);
+    }
 }
