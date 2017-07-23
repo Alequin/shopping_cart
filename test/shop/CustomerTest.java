@@ -117,7 +117,7 @@ public class CustomerTest {
         expected = expected.multiply(BigDecimal.valueOf(0.02));
         assertEquals(expected.doubleValue(), customer1.getCostOfItemsWithDiscount());
     }
-    
+
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__CountItems(){
         customer1.countBasketItems();
