@@ -34,6 +34,13 @@ public class BasketTest {
     }
 
     @Test
+    public void canGetAssociatedShopName(){
+        String expected1 = "The Shop";
+        String result1 = basket1.getShopName();
+        assertEquals(expected1, result1);
+    }
+
+    @Test
     public void canAddToBasket(){
         int preAddLength = basket1.countItems();
 
