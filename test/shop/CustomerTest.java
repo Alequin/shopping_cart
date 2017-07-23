@@ -88,6 +88,17 @@ public class CustomerTest {
         assertEquals(0, customer1.countBasketItems());
     }
 
+    @Test
+    public void canGetBasketItemsTotalCost(){
+        customer1.enterShop(shop1);
+
+        customer1.addToBasket(0);
+        customer1.addToBasket(0);
+        customer1.addToBasket(0);
+
+        assertEquals(8.90, customer1.getCostOfItems());
+    }
+
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__CountItems(){
         customer1.countBasketItems();
@@ -99,5 +110,9 @@ public class CustomerTest {
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__RemoveItems(){
         customer1.removeFromBasket(0);
+    }
+    @Test (expected = IllegalStateException.class)
+    public void cannotUseBasketWhenNotInShop__GetCostOfItems(){
+        customer1.getCostOfItems();
     }
 }

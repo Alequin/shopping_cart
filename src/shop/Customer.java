@@ -64,4 +64,11 @@ public class Customer {
         }
         basket.remove(index);
     }
+
+    public double getCostOfItems() {
+        if(basket == null){
+            throw new IllegalStateException(NOT_IN_SHOP_MESSAGE);
+        }
+        return basket.getTotalCost();
+    }
 }
