@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 
 public class Customer {
 
+    private static final String NOT_IN_SHOP_MESSAGE = "The customer is not in a shop";
+
     private BigDecimal money;
     private boolean hasLoyaltyCard;
 
@@ -42,4 +44,17 @@ public class Customer {
         shop.addCustomer(this);
     }
 
+    public int countBasketItems() {
+        if(basket == null){
+            throw new IllegalStateException(NOT_IN_SHOP_MESSAGE);
+        }
+        return basket.countItems();
+    }
+
+    public void addToBasket(int index) {
+        if(basket == null){
+            throw new IllegalStateException(NOT_IN_SHOP_MESSAGE);
+        }
+        basket.add(index);
+    }
 }

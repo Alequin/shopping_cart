@@ -62,6 +62,7 @@ public class CustomerTest {
 
     @Test
     public void canAddItemToBasket(){
+        customer1.enterShop(shop1);
 
         assertEquals(0, customer1.countBasketItems());
 
