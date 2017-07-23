@@ -60,6 +60,12 @@ public class Stock {
         twoForOneTracker.put(type, true);
     }
 
+    public void removeFromTwoForOne(Class type){
+        if(twoForOneTracker.get(type) != null){
+            twoForOneTracker.put(type, false);
+        }
+    }
+
     public Product remove(int index) {
         Product product = products.remove(index);
         subtractOneFromItemCount(product);
