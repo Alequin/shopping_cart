@@ -14,6 +14,10 @@ public class Basket {
         this.products = new ArrayList<Product>();
     }
 
+    protected String getShopName(){
+        return shopStock.getShopName();
+    }
+
     protected void add(int stockIndex){
         Product toAdd = shopStock.remove(stockIndex);
         products.add(toAdd);
