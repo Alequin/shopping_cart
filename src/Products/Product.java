@@ -21,6 +21,9 @@ public abstract class Product{
     }
 
     public void setCost(double cost){
+        if(cost < 0){
+            throw new IllegalArgumentException("Price cannot be less than 0. Current price: " + cost);
+        }
         this.cost = BigDecimal.valueOf(cost);
     }
 }
