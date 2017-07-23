@@ -59,4 +59,12 @@ public class Basket {
         return sum;
     }
 
+    protected double getTotalCost(){
+        double cost = 0;
+        int length = products.size();
+        for (Product product : products) {
+            cost += product.getCost();
+        }
+        return cost;
+    }
 }
