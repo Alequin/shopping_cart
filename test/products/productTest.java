@@ -6,6 +6,8 @@ import Products.Product;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.math.BigDecimal;
+
 import static junit.framework.TestCase.assertEquals;
 
 public class productTest {
@@ -29,6 +31,13 @@ public class productTest {
         double expected = 4.23;
         double result = product1.getCost();
         assertEquals(expected, result);
+    }
+
+    @Test
+    public void canGetCostAsBigDecimal(){
+        double expected = 4.23;
+        BigDecimal result = product1.getCostAsBigDecimal();
+        assertEquals(expected, result.doubleValue());
     }
 
     @Test
