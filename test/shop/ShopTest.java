@@ -89,4 +89,13 @@ public class ShopTest {
         shop1.removeCustomer(c1);
         assertEquals(0, shop1.countCustomers());
     }
+
+    @Test
+    public void canCheckIfCustomerIsInShop(){
+
+        Customer c1 = new Customer(200, false);
+        shop1.addCustomer(c1);
+
+        assertEquals(true, shop1.isCustomerInShop(c1));
+    }
 }
