@@ -33,6 +33,19 @@ public class Stock {
         return count == null ? 0 : count;
     }
 
+    public boolean isInStock(Product product){
+        return products.contains(product);
+    }
+
+    public boolean isInStock(Class type){
+        for(Product product : products){
+            if(product.getClass() == type){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public Product remove(int index) {
         Product product = products.remove(index);
         subtractOneFromItemCount(product);
