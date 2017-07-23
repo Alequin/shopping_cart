@@ -69,6 +69,12 @@ public class StockTest {
         int expected3 = 2;
         int result3 = stock1.countItems(Pizza.class);
         assertEquals(expected3, result3);
+
+        stock1.empty();
+
+        int expected4 = 0;
+        int result4 = stock1.countItems(Pizza.class);
+        assertEquals(expected4, result4);
     }
 
     @Test
