@@ -15,4 +15,24 @@ public class Customer {
         this.hasLoyaltyCard = hasLoyaltyCard;
     }
 
+    public double getMoney(){
+        return money.doubleValue();
+    }
+
+    public BigDecimal getMoneyAsBigDecimal(){
+        return BigDecimal.valueOf(money.doubleValue());
+    }
+
+    public void increaseMoney(double amount){
+        money = getAlteredMoney(amount);
+    }
+
+    public void decreaseMoney(double amount){
+        money = getAlteredMoney(-amount);
+    }
+
+    private BigDecimal getAlteredMoney(double amount){
+        return money.add(BigDecimal.valueOf(amount));
+    }
+
 }
