@@ -17,6 +17,10 @@ public class Customer {
         this.hasLoyaltyCard = hasLoyaltyCard;
     }
 
+    public void setHasLoyaltyCard(boolean state){
+        this.hasLoyaltyCard = state;
+    }
+
     public double getMoney(){
         return money.doubleValue();
     }

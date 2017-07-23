@@ -99,6 +99,23 @@ public class CustomerTest {
         assertEquals(8.90, customer1.getCostOfItems());
     }
 
+    @Test
+    public void canGetBasketItemsTotalCostWithDiscount(){
+        customer1.enterShop(shop1);
+
+        customer1.addToBasket(0);
+        customer1.addToBasket(0);
+        customer1.addToBasket(0);
+
+        BigDecimal expected = BigDecimal.valueOf(8.90);
+
+        assertEquals(expected.doubleValue(), customer1.getCostOgfItemsWithDiscount());
+
+        customer1.setHasLoyaltyCard(true);
+        expected = expected.multiply(BigDecimal.valueOf(0.02));
+        assertEquals(expected.doubleValue(), customer1.getCostOfItemsWithDiscount());
+    }
+
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__CountItems(){
         customer1.countBasketItems();
@@ -113,6 +130,10 @@ public class CustomerTest {
     }
     @Test (expected = IllegalStateException.class)
     public void cannotUseBasketWhenNotInShop__GetCostOfItems(){
+        customer1.getCostOfItems();
+    }
+    @Test (expected = IllegalStateException.class)
+    public void cannotUseBasketWhenNotInShop__GetCostOfItemsWithDiscount(){
         customer1.getCostOfItems();
     }
 }
