@@ -29,7 +29,8 @@ public class Stock {
     }
 
     public int countItems(Class type) {
-        return itemCounter.get(type);
+        Integer count = itemCounter.get(type);
+        return count == null ? 0 : count;
     }
 
     public Product remove(int index) {
@@ -41,6 +42,7 @@ public class Stock {
     public Product[] empty() {
         Product[] tempProducts = products.toArray(new Product[products.size()]);
         products.clear();
+        itemCounter.clear();
         return tempProducts;
     }
 
