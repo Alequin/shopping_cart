@@ -106,7 +106,7 @@ public class StockTest {
             stock1.add(products[j]);
         }
         Product[] tempProducts = stock1.empty(Pizza.class);
-        
+
         int expected1 = 0;
         int result1 = stock1.countItems(Pizza.class);
         assertEquals(expected1, result1);

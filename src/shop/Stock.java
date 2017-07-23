@@ -46,6 +46,22 @@ public class Stock {
         return tempProducts;
     }
 
+    public Product[] empty(Class type) {
+        int resultIndex = 0;
+        Product[] result = new Product[countItems(type)];
+        int length = products.size();
+
+        for(int j=length-1; j>=0; j--){
+            Product product = products.get(j);
+            if(product.getClass() == type){
+                result[resultIndex++] = products.remove(j);
+            }
+        }
+
+        itemCounter.remove(type);
+        return result;
+    }
+
     private void addOneToItemCount(Product product){
         alterItemCount(product, 1);
     }
