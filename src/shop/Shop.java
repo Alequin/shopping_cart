@@ -61,4 +61,8 @@ public class Shop {
     protected void removeCustomer(Customer customer){
         customers.remove(customer);
     }
+
+    public boolean isCustomerInShop(Customer customer){
+        return customers.contains(customer);
+    }
 }
