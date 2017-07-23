@@ -141,6 +141,11 @@ public class BasketTest {
 
         assertEquals(preRemoveBasketCount-2, basket1.countItems());
         assertEquals(preRemoveStockCount+2, shopStock.countItems());
+
+        basket1.remove(Crisps.class);
+
+        assertEquals(preRemoveBasketCount-3, basket1.countItems());
+        assertEquals(preRemoveStockCount+3, shopStock.countItems());
     }
 
     @Test
