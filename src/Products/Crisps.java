@@ -2,8 +2,11 @@ package Products;
 
 public class Crisps extends Product{
 
-    public Crisps(double cost){
-        super("Crisps", cost);
+    protected Crisps(String name, double cost){
+        super(name, cost);
     }
 
+    public Crisps(double cost){
+        this("Crisps", cost);
+    }
 }
