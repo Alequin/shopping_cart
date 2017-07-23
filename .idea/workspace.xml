@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="" />
+    <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/shop_test/ShopTest.java" afterPath="$PROJECT_DIR$/test/shop_test/ShopTest.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Shop.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Shop.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shop/Shop.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -27,15 +29,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShopTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/shop_test/ShopTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="317">
+              <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +74,8 @@
         <option value="$PROJECT_DIR$/src/Products/Crisps.java" />
         <option value="$PROJECT_DIR$/src/Products/Pizza.java" />
         <option value="$PROJECT_DIR$/test/products_test/productTest.java" />
-        <option value="$PROJECT_DIR$/test/shop_test/ShopTest.java" />
         <option value="$PROJECT_DIR$/src/shop/Shop.java" />
+        <option value="$PROJECT_DIR$/test/shop_test/ShopTest.java" />
       </list>
     </option>
   </component>
@@ -558,6 +562,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/shop_test/ShopTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/shop/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -567,18 +585,6 @@
             <element signature="e#301#302#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/shop_test/ShopTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
