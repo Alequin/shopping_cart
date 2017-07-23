@@ -27,4 +27,10 @@ public class Stock {
     public Product remove(int index) {
         return products.remove(index);
     }
+
+    public Product[] empty() {
+        Product[] tempProducts = products.toArray(new Product[products.size()]);
+        products.clear();
+        return tempProducts;
+    }
 }
