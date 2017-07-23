@@ -151,4 +151,22 @@ public class StockTest {
         boolean result2 = stock1.isTwoForOne(Pizza.class);
         assertEquals(true, result2);
     }
+
+    @Test
+    public void canMakeItemTwoForOne(){
+
+        for(int j=0; j<3; j++){
+            Class prodClass = products[j].getClass();
+            assertEquals(false, stock1.isTwoForOne(prodClass));
+        }
+
+        for(int j=0; j<3; j++){
+            stock1.makeTwoForOne(products[j].getClass());
+        }
+
+        for(int j=0; j<3; j++){
+            Class prodClass = products[j].getClass();
+            assertEquals(true, stock1.isTwoForOne(prodClass));
+        }
+    }
 }
