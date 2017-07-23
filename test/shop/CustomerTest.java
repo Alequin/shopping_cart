@@ -40,5 +40,4 @@ public class CustomerTest {
         customer.decreaseMoney(amount);
         assertEquals(100.00, customer.getMoney());
     }
-
 }

@@ -68,4 +68,16 @@ public class ShopTest {
     public void cannotSetInitialMoneyLessThanZero(){
         new Shop("x shop", -0.1);
     }
+
+    @Test
+    public void canAddCustomer(){
+
+        assertEquals(0, shop1.getCustomerCount());
+
+        Customer c1 = new Customer(200, false);
+        shop1.addCustomer(c1);
+
+        assertEquals(1, shop1.getCustomerCount());
+        assertEquals(c1, shop1.getCustomers()[0]);
+    }
 }
