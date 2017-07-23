@@ -9,10 +9,12 @@ public class Stock {
 
     private ArrayList<Product> products;
     private HashMap<Class, Integer> itemCounter;
+    private HashMap<Class, Boolean> twoForOneTracker;
 
     public Stock(){
         products = new ArrayList<>();
         itemCounter = new HashMap<>();
+        twoForOneTracker = new HashMap<>();
     }
 
     public void add(Product product) {
@@ -44,6 +46,19 @@ public class Stock {
             }
         }
         return false;
+    }
+
+    public boolean isTwoForOne(Class type){
+        boolean twoForOne;
+        if(twoForOneTracker.get(type) == null){
+            return false;
+        }else{
+            return twoForOneTracker.get(type);
+        }
+    }
+
+    public void makeTwoForOne(Class type){
+        twoForOneTracker.put(type, true);
     }
 
     public Product remove(int index) {
