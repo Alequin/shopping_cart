@@ -2,6 +2,7 @@ package shop;
 
 import Products.Product;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class Basket {
@@ -60,11 +61,10 @@ public class Basket {
     }
 
     protected double getTotalCost(){
-        double cost = 0;
-        int length = products.size();
+        BigDecimal cost = BigDecimal.ZERO;
         for (Product product : products) {
-            cost += product.getCost();
+            cost = cost.add(product.getCostAsBigDecimal());
         }
-        return cost;
+        return cost.doubleValue();
     }
 }

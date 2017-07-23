@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Products/Product.java" afterPath="$PROJECT_DIR$/src/Products/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/products/productTest.java" afterPath="$PROJECT_DIR$/test/products/productTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shop/Basket.java" afterPath="$PROJECT_DIR$/src/shop/Basket.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,31 +14,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Products/Product.java">
+      <file leaf-file-name="Basket.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/shop/Basket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding>
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="method#setCost#0;class#Product#0" expanded="false" />
+                <element signature="method#Basket#0;class#Basket#0" expanded="false" />
+                <element signature="method#add#0;class#Basket#0" expanded="false" />
+                <element signature="method#remove#0;class#Basket#0" expanded="false" />
+                <element signature="method#remove#1;class#Basket#0" expanded="false" />
+                <element signature="method#empty#0;class#Basket#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/products/productTest.java">
+      <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,10 +81,10 @@
         <option value="$PROJECT_DIR$/src/shop/Stock.java" />
         <option value="$PROJECT_DIR$/src/shop/Shop.java" />
         <option value="$PROJECT_DIR$/test/shop_test/BasketTest.java" />
-        <option value="$PROJECT_DIR$/src/shop/Basket.java" />
         <option value="$PROJECT_DIR$/test/shop/BasketTest.java" />
         <option value="$PROJECT_DIR$/test/products/productTest.java" />
         <option value="$PROJECT_DIR$/src/Products/Product.java" />
+        <option value="$PROJECT_DIR$/src/shop/Basket.java" />
       </list>
     </option>
   </component>
@@ -417,9 +414,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shop - 2017.07.23 at 20h 52m 56s.xml">
-      <configuration name="All in shop" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shop - 2017.07.23 at 20h 55m 26s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
@@ -444,8 +438,11 @@
     <history-entry file="All_in_shop - 2017.07.23 at 21h 20m 21s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canAddToBasket__OtherIndex - 2017.07.23 at 20h 54m 41s.xml">
-      <configuration name="BasketTest.canAddToBasket__OtherIndex" configurationId="JUnit" />
+    <history-entry file="All_in_shop - 2017.07.23 at 21h 22m 00s.xml">
+      <configuration name="All in shop" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shop - 2017.07.23 at 21h 22m 34s.xml">
+      <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -620,30 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shop/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="method#Basket#0;class#Basket#0" expanded="false" />
-            <element signature="method#add#0;class#Basket#0" expanded="false" />
-            <element signature="method#remove#0;class#Basket#0" expanded="false" />
-            <element signature="method#remove#1;class#Basket#0" expanded="false" />
-            <element signature="method#empty#0;class#Basket#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Products/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -666,6 +639,30 @@
             <element signature="imports" expanded="true" />
             <element signature="e#310#311#0" expanded="true" />
             <element signature="e#352#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/shop/BasketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/shop/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding>
+            <element signature="method#Basket#0;class#Basket#0" expanded="false" />
+            <element signature="method#add#0;class#Basket#0" expanded="false" />
+            <element signature="method#remove#0;class#Basket#0" expanded="false" />
+            <element signature="method#remove#1;class#Basket#0" expanded="false" />
+            <element signature="method#empty#0;class#Basket#0" expanded="false" />
           </folding>
         </state>
       </provider>
