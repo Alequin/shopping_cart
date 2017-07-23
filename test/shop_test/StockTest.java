@@ -99,4 +99,19 @@ public class StockTest {
         assertEquals(0, stock1.countItems());
         assertArrayEquals(products, stockProducts);
     }
+
+    @Test
+    public void canEmptyProductsOfSpecificType(){
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
+        Product[] tempProducts = stock1.empty(Pizza.class);
+        
+        int expected1 = 0;
+        int result1 = stock1.countItems(Pizza.class);
+        assertEquals(expected1, result1);
+
+        Product[] expectedArray = {products[0]};
+        assertArrayEquals(expectedArray, tempProducts);
+    }
 }
