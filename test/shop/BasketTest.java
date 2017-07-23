@@ -65,6 +65,34 @@ public class BasketTest {
     }
 
     @Test
+    public void canCountItems(){
+
+        assertEquals(0, basket1.countItems());
+
+        basket1.add(0);
+        assertEquals(1, basket1.countItems());
+
+        basket1.add(1);
+        assertEquals(2, basket1.countItems());
+
+        basket1.add(0);
+        assertEquals(3, basket1.countItems());
+    }
+
+    @Test
+    public void canCountItemsByType(){
+        shopStock.add(new Pizza(2.5));
+        basket1.add(1);
+        basket1.add(2);
+        basket1.add(1);
+        basket1.add(0);
+
+        assertEquals(2, basket1.countItems(Pizza.class));
+        assertEquals(1, basket1.countItems(Crisps.class));
+        assertEquals(1, basket1.countItems(ToothPaste.class));
+    }
+
+    @Test
     public void canRemoveFromBasket(){
         basket1.add(0);
         basket1.add(0);
