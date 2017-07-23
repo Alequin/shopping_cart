@@ -72,4 +72,13 @@ public class CustomerTest {
 
         assertEquals(3, customer1.countBasketItems());
     }
+
+    @Test (expected = IllegalStateException.class)
+    public void cannotUseBasketWhenNotInShop__CountItems(){
+        customer1.countBasketItems();
+    }
+    @Test (expected = IllegalStateException.class)
+    public void cannotUseBasketWhenNotInShop__AddItems(){
+        customer1.addToBasket(0);
+    }
 }
