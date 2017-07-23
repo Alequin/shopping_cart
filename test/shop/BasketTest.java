@@ -62,4 +62,19 @@ public class BasketTest {
         assertEquals(preRemoveStockCount+3, shopStock.countItems());
     }
 
+    @Test
+    public void canEmptyBasket(){
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+
+        int preRemoveBasketCount = basket1.countItems();
+        int preRemoveStockCount = shopStock.countItems();
+
+        basket1.empty();
+
+        assertEquals(preRemoveBasketCount-3, basket1.countItems());
+        assertEquals(preRemoveStockCount+3, shopStock.countItems());
+    }
+
 }
