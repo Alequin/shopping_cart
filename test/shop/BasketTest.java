@@ -220,7 +220,7 @@ public class BasketTest {
 
         BigDecimal pizzaCost = new Pizza().getCostAsBigDecimal();
         BigDecimal pizza25Cost = pizzaCost.multiply(BigDecimal.valueOf(25));
-        BigDecimal expected = pizza25Cost.add(pizzaCost);
+        BigDecimal expected = pizza25Cost.add(pizzaCost).multiply(BigDecimal.valueOf(0.1));
 
         assertEquals(expected.doubleValue(), basket1.getTotalCostWithDiscount());
     }

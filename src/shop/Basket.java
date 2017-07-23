@@ -89,6 +89,12 @@ public class Basket {
                 cost = cost.add(product.getCostAsBigDecimal());
             }
         }
-        return cost.doubleValue();
+
+        if(cost.doubleValue() > 20){
+            BigDecimal percentage = BigDecimal.valueOf(0.1);
+            return cost.multiply(percentage).doubleValue();
+        }else {
+            return cost.doubleValue();
+        }
     }
 }
