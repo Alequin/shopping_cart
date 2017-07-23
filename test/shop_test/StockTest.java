@@ -13,10 +13,17 @@ import static junit.framework.TestCase.assertEquals;
 public class StockTest {
 
     private Stock stock1;
+    private Product[] products;
 
     @Before
     public void setup(){
         stock1 = new Stock();
+
+        Product p1 = new Pizza(10);
+        Product p2 = new Crisps(10);
+        Product p3 = new ToothPaste(10);
+        Product[] tempProducts = {p1, p2, p3};
+        products = tempProducts;
     }
 
     @Test
@@ -30,11 +37,6 @@ public class StockTest {
 
     @Test
     public void canCountProducts(){
-        Product p1 = new Pizza(10);
-        Product p2 = new Crisps(10);
-        Product p3 = new ToothPaste(10);
-        Product[] products = {p1, p2, p3};
-
         int expected1 = 0;
         int result1 = stock1.countItems();
         assertEquals(expected1, result1);
@@ -49,11 +51,6 @@ public class StockTest {
 
     @Test
     public void cannotAddExistingProductsToStock(){
-        Product p1 = new Pizza(10);
-        Product p2 = new Crisps(10);
-        Product p3 = new ToothPaste(10);
-        Product[] products = {p1, p2, p3};
-
         for(int j=0; j<3; j++){
             stock1.add(products[j]);
         }
@@ -63,5 +60,12 @@ public class StockTest {
             stock1.add(products[j]);
         }
         assertEquals(preAddCount, stock1.countItems());
+    }
+
+    @Test
+    public void canEmptyBasket(){
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
     }
 }
