@@ -11,7 +11,7 @@ public class Basket {
 
     protected Basket(Stock shopStock){
         this.shopStock = shopStock;
-        this.products = new ArrayList<Product>(g);
+        this.products = new ArrayList<Product>();
     }
 
     protected void add(int stockIndex){

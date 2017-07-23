@@ -45,4 +45,21 @@ public class BasketTest {
         assertEquals(0, shopStock.countItems());
     }
 
+    @Test
+    public void canRemoveFromBasket(){
+        basket1.add(0);
+        basket1.add(0);
+        basket1.add(0);
+
+        int preRemoveBasketCount = basket1.countItems();
+        int preRemoveStockCount = shopStock.countItems();
+
+        basket1.remove(0);
+        basket1.remove(0);
+        basket1.remove(0);
+
+        assertEquals(preRemoveBasketCount-3, basket1.countItems());
+        assertEquals(preRemoveStockCount+3, shopStock.countItems());
+    }
+
 }
