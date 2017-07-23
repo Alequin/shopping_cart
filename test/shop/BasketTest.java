@@ -7,6 +7,8 @@ import Products.ToothPaste;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.math.BigDecimal;
+
 import static junit.framework.TestCase.assertEquals;
 
 
@@ -201,6 +203,43 @@ public class BasketTest {
         basket1.add(0);
 
         assertEquals(10.80, basket1.getTotalCostWithDiscount());
+    }
 
+    @Test
+    public void getTotalCostWithDiscount__MoreItems(){
+
+        for(int j=0; j<51; j++){
+            shopStock.add(new Pizza());
+        }
+
+        shopStock.makeTwoForOne(Pizza.class);
+
+        for(int j=0; j<51; j++){
+            basket1.add(3);
+        }
+
+        BigDecimal pizzaCost = new Pizza().getCostAsBigDecimal();
+        BigDecimal pizza25Cost = pizzaCost.multiply(BigDecimal.valueOf(25));
+        BigDecimal expected = pizza25Cost.add(pizzaCost);
+
+        assertEquals(expected.doubleValue(), basket1.getTotalCostWithDiscount());
+    }
+
+    @Test
+    public void getTotalCostWithDiscount__AllDeals(){
+
+        shopStock.add(new Pizza());
+        shopStock.add(new Crisps());
+        shopStock.add(new ToothPaste());
+
+        for(int j=0; j<6; j++){
+            basket1.add(0);
+        }
+
+        shopStock.makeTwoForOne(Pizza.class);
+        shopStock.makeTwoForOne(Crisps.class);
+        shopStock.makeTwoForOne(ToothPaste.class);
+
+        assertEquals(10.80, basket1.getTotalCostWithDiscount());
     }
 }
