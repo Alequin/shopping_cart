@@ -38,4 +38,11 @@ public class productTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void canGetSubClass(){
+        Class expected = Pizza.class;
+        Class result = product1.getClass();
+        assertEquals(expected, result);
+    }
+
 }
