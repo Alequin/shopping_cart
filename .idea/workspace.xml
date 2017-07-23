@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/shop/shop_test/StockTest.class" afterPath="$PROJECT_DIR$/out/test/shop/shop_test/StockTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/shop_test/StockTest.java" afterPath="$PROJECT_DIR$/test/shop_test/StockTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,13 +37,12 @@
       <file leaf-file-name="StockTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/shop_test/StockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="46">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#330#331#0" expanded="true" />
                 <element signature="e#366#367#0" expanded="true" />
-                <element signature="method#canAddAndRemoveProduct#0;class#StockTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -406,9 +407,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shop - 2017.07.23 at 12h 40m 51s.xml">
-      <configuration name="All in shop" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shop - 2017.07.23 at 12h 45m 47s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
@@ -431,6 +429,9 @@
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_shop - 2017.07.23 at 14h 33m 03s.xml">
+      <configuration name="All in shop" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_shop - 2017.07.23 at 14h 35m 59s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StockTest_canCountProducts - 2017.07.23 at 14h 15m 02s.xml">
@@ -635,13 +636,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/shop_test/StockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="46">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
             <element signature="e#366#367#0" expanded="true" />
-            <element signature="method#canAddAndRemoveProduct#0;class#StockTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

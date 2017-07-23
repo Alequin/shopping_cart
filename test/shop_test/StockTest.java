@@ -45,12 +45,23 @@ public class StockTest {
             result1 = stock1.countItems();
             assertEquals(expected1, result1);
         }
+    }
 
-        stock1.add(p1);
-        stock1.add(p2);
-        stock1.add(p3);
+    @Test
+    public void cannotAddExistingProductsToStock(){
+        Product p1 = new Pizza(10);
+        Product p2 = new Crisps(10);
+        Product p3 = new ToothPaste(10);
+        Product[] products = {p1, p2, p3};
 
-        int result5 = stock1.countItems();
-        assertEquals(expected1, result5);
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
+
+        int preAddCount = stock1.countItems();
+        for(int j=0; j<3; j++){
+            stock1.add(products[j]);
+        }
+        assertEquals(preAddCount, stock1.countItems());
     }
 }
