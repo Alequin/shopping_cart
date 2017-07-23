@@ -57,4 +57,11 @@ public class Customer {
         }
         basket.add(index);
     }
+
+    public void removeFromBasket(int index) {
+        if(basket == null){
+            throw new IllegalStateException(NOT_IN_SHOP_MESSAGE);
+        }
+        basket.remove(index);
+    }
 }

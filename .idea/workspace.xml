@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889c0b46-e721-468d-9bca-552881e6752e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/shop/Customer.java" afterPath="$PROJECT_DIR$/src/shop/Customer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/shop/CustomerTest.java" afterPath="$PROJECT_DIR$/test/shop/CustomerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,32 +15,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shop/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="425">
+              <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
               <folding>
                 <element signature="method#Customer#0;class#Customer#0" expanded="false" />
                 <element signature="method#enterShop#0;class#Customer#0" expanded="false" />
+                <element signature="method#countBasketItems#0;class#Customer#0" expanded="false" />
+                <element signature="method#addToBasket#0;class#Customer#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/shop/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#1883#1884#0" expanded="true" />
-                <element signature="e#1927#1928#0" expanded="true" />
-                <element signature="e#2036#2037#0" expanded="true" />
-                <element signature="e#2076#2077#0" expanded="true" />
+                <element signature="method#setup#0;class#CustomerTest#0" expanded="false" />
+                <element signature="method#canGetMoneyAsBigDecimal#0;class#CustomerTest#0" expanded="false" />
+                <element signature="method#canIncreaseMoney#0;class#CustomerTest#0" expanded="false" />
+                <element signature="method#canDecreaseMoney#0;class#CustomerTest#0" expanded="false" />
+                <element signature="method#customerCanEnterShop#0;class#CustomerTest#0" expanded="false" />
+                <element signature="e#2561#2562#0" expanded="true" />
+                <element signature="e#2606#2607#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +93,8 @@
         <option value="$PROJECT_DIR$/test/shop/BasketTest.java" />
         <option value="$PROJECT_DIR$/test/shop/ShopTest.java" />
         <option value="$PROJECT_DIR$/src/shop/Shop.java" />
-        <option value="$PROJECT_DIR$/src/shop/Customer.java" />
         <option value="$PROJECT_DIR$/test/shop/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/shop/Customer.java" />
       </list>
     </option>
   </component>
@@ -421,9 +424,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_shop - 2017.07.23 at 22h 46m 59s.xml">
-      <configuration name="All in shop" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_shop - 2017.07.23 at 22h 47m 12s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
@@ -451,6 +451,9 @@
     <history-entry file="All_in_shop - 2017.07.23 at 23h 17m 45s.xml">
       <configuration name="All in shop" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_shop - 2017.07.23 at 23h 20m 26s.xml">
+      <configuration name="All in shop" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -465,7 +468,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -682,29 +685,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/shop/Customer.java">
+    <entry file="file://$PROJECT_DIR$/test/shop/CustomerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
           <folding>
-            <element signature="method#Customer#0;class#Customer#0" expanded="false" />
-            <element signature="method#enterShop#0;class#Customer#0" expanded="false" />
+            <element signature="method#setup#0;class#CustomerTest#0" expanded="false" />
+            <element signature="method#canGetMoneyAsBigDecimal#0;class#CustomerTest#0" expanded="false" />
+            <element signature="method#canIncreaseMoney#0;class#CustomerTest#0" expanded="false" />
+            <element signature="method#canDecreaseMoney#0;class#CustomerTest#0" expanded="false" />
+            <element signature="method#customerCanEnterShop#0;class#CustomerTest#0" expanded="false" />
+            <element signature="e#2561#2562#0" expanded="true" />
+            <element signature="e#2606#2607#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/shop/CustomerTest.java">
+    <entry file="file://$PROJECT_DIR$/src/shop/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="81" column="33" lean-forward="true" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
+        <state relative-caret-position="425">
+          <caret line="63" column="9" lean-forward="false" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#1883#1884#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#2036#2037#0" expanded="true" />
-            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="method#Customer#0;class#Customer#0" expanded="false" />
+            <element signature="method#enterShop#0;class#Customer#0" expanded="false" />
+            <element signature="method#countBasketItems#0;class#Customer#0" expanded="false" />
+            <element signature="method#addToBasket#0;class#Customer#0" expanded="false" />
           </folding>
         </state>
       </provider>
