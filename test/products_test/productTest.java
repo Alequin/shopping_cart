@@ -23,4 +23,19 @@ public class productTest {
         assertEquals(expected, result);
     }
 
+    @Test
+    public void canGetPrice(){
+        double expected = 4.23;
+        double result = product1.getCost();
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void canSetPrice(){
+        double expected = 6.50;
+        product1.setCost(expected);
+        double result = product1.getCost();
+        assertEquals(expected, result);
+    }
+
 }
