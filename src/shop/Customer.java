@@ -84,7 +84,7 @@ public class Customer {
         BigDecimal cost = BigDecimal.valueOf(basket.getTotalCostWithDiscount());
 
         if(hasLoyaltyCard){
-            return cost.multiply(BigDecimal.valueOf(0.02)).doubleValue();
+            return Discount.getDiscountWithLoyaltyCard(cost).doubleValue();
         }else{
             return cost.doubleValue();
         }
