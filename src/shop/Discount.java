@@ -4,6 +4,7 @@ import Products.Product;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Discount {
 
@@ -12,24 +13,20 @@ public class Discount {
     protected static final BigDecimal overLimitDiscount = BigDecimal.valueOf(0.1);
 
     protected static BigDecimal getCostWithTwoForOneDiscount(Stock stock, ArrayList<Product> products){
-        ArrayList<Class> seenList = new ArrayList<>();
+        HashMap<Class, Boolean> seenList = new HashMap<>();
 
         BigDecimal cost = BigDecimal.ZERO;
         for (Product product : products) {
 
             Class current = product.getClass();
-            boolean seen = false;
-            if(stock.isTwoForOne(current)){
-                seen = seenList.contains(current);
-                if(!seen){
-                    seenList.add(current);
-                }else{
-                    seenList.remove(current);
-                }
+            seenList.putIfAbsent(current, false);
+
+            if(!seenList.get(current)){
+                cost = cost.add(product.getCostAsBigDecimal());
             }
 
-            if(!seen){
-                cost = cost.add(product.getCostAsBigDecimal());
+            if(stock.isTwoForOne(current)){
+                seenList.put(current, !seenList.get(current));
             }
         }
         return cost;
